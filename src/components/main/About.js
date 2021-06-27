@@ -30,7 +30,7 @@ const Quote = styled.div`
 
 const About = () => {
   return (
-    <HomeContainer>
+    <HomeContainer id="section-about">
       <Quote>
         <div>About us, the true story</div>
       </Quote>

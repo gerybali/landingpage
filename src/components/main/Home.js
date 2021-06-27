@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {colors} from '../../styles/colors';
-import hands from '../../images/hands.jpeg';
+import hands from '../../images/hands2.png';
 import google from '../../images/google.webp';
 import ios from '../../images/ios.webp';
 
@@ -34,15 +34,18 @@ const Quote = styled.div`
 const Hands = styled.div`
   flex-grow: 1;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 `;
 
 const HandsImage = styled.img`
-  width: 1200px;
+  width: 800px;
 `;
 
 const DownloadButtons = styled.div`
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -54,7 +57,7 @@ const DownloadButtons = styled.div`
 
 const Home = () => {
   return (
-    <HomeContainer>
+    <HomeContainer id="section-main">
       <Quote>
         <div>The space, the robots...</div>
         <div>Are you ready?</div>

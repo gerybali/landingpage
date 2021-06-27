@@ -4,8 +4,8 @@ export const colors = {
   logo: '#11caa0',
   homeBackground: '#FFF',
   aboutBackground: '#410fa3',
-  contactBackground: '#dfe842',
+  contactBackground: '#000',
   homeTitle: '#410fa3',
   aboutTitle: '#dfe842',
-  contactTitle: '#27364c',
+  contactTitle: '#a5a5a5',
 }

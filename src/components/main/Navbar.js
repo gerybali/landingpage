@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const NavContainer = styled.nav`
   width: 100vw;
-  height: 54px;
+  height: 50px;
   box-sizing: border-box;
   background-color: ${colors.navbarBackground};
   display: flex;
@@ -15,13 +15,16 @@ const NavContainer = styled.nav`
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50;
   z-index: 10;
 `;
 
 const LeftPanel = styled.div`
   width: 100px;
   color: ${colors.logo};
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 55px;
 `;
 
 const RightPanel = styled.div`
@@ -57,15 +60,16 @@ const MenuItem = styled.li`
   
 `;
 
+
 const NavBar = () => {
   return (
     <NavContainer>
-      <LeftPanel>PafCol</LeftPanel>
+      <LeftPanel><nobr>Pafcol <small><small>studio</small></small></nobr></LeftPanel>
       <RightPanel>
         <MenuItems>
           <MenuItem><Link activeClass="active" to="section-main" spy={true} smooth={true} duration={1000}>Main</Link></MenuItem>
           <MenuItem><Link activeClass="active" to="section-about" spy={true} smooth={true} duration={1000}>About</Link></MenuItem>
-          <MenuItem><Link activeClass="active" to="section-contactus" spy={true} smooth={true} duration={1000}>Contact us</Link></MenuItem>
+          <MenuItem><Link activeClass="active" to="section-contactus" spy={true} smooth={true} duration={1000}>Contact Us</Link></MenuItem>
         </MenuItems>
       </RightPanel>
     </NavContainer>

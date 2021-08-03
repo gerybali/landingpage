@@ -20,10 +20,10 @@ const Quote = styled.div`
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
-  font-size: 4em;
+  font-size: 2.5em;
   align-items: center;
   font-weight: bold;
-  color: ${colors.aboutTitle};
+  color: ${colors.mailTitle};
   margin-top: 80px;
 `;
 
@@ -37,8 +37,9 @@ const AboutBox = styled.div`
 `;
 
 const Text = styled.p`
-  color: ${colors.aboutTitle};
+  color: ${colors.mailTitle};
 `;
+
 const About = () => {
   return (
     <HomeContainer id="section-about">
@@ -48,7 +49,9 @@ const About = () => {
       
       <AboutBox>
         <Text>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        At Pafcol Studio we make games. Our passion is to find new ideas and experiences.  
+        We take inspiration and experiment on topics that aren't always game related.
+        
         </Text>
       </AboutBox>
       

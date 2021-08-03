@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import {colors} from '../../styles/colors';
 import contactus from '../../images/contactus-white.png';
 
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons";
+
 const HomeContainer = styled.div`
   width: 100vw;
   height: 100vh;
@@ -22,7 +25,7 @@ const Quote = styled.div`
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
-  font-size: 4em;
+  font-size: 2em;
   align-items: center;
   font-weight: bold;
   color: ${colors.contactTitle};
@@ -37,7 +40,7 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url(${contactus}) no-repeat;
+  background: url(${contactus}) no-repeat
   height: 280px;
 `;
 
@@ -56,6 +59,24 @@ const ContactMessage = styled.div`
   }
 `;
 
+//my extent
+
+const Wrapper = styled.section`
+  
+  height: 51px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  margin: 38em;
+  background-color: ${colors.aboutTitle};
+     
+`;
+
+
+
+
 const Contact = () => {
   return (
     <HomeContainer id="section-contactus">
@@ -64,9 +85,20 @@ const Contact = () => {
       </Quote>
       
       <Box>
-        <ContactMessage>Send an email to <a href="mailto:gerybalint@gmail.com">gerybalint@gmail.com</a></ContactMessage>
+        <ContactMessage>Send an email to <a href="mailto:pafcolstudio@gmail.com">pafcolstudio@gmail.com</a></ContactMessage>
+    
       </Box>
       
+      <Wrapper>
+       
+      <a
+  href="https://www.instagram.com/pafcolstudio"
+  className="instagram social"
+> 
+  <FontAwesomeIcon icon={faInstagram} size="3x" />
+</a>
+</Wrapper>
+
     </HomeContainer>
   )
 }

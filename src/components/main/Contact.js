@@ -7,6 +7,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram} from "@fortawesome/free-brands-svg-icons";
 
 const HomeContainer = styled.div`
+  background: url(${contactus}) no-repeat center 222px;
   width: 100vw;
   height: 100vh;
   min-height: 400px;
@@ -29,18 +30,18 @@ const Quote = styled.div`
   align-items: center;
   font-weight: bold;
   color: ${colors.contactTitle};
-  margin-top: 80px;
+  margin-top: 95px;
 `;
 
 const Box = styled.div`
   color: #FFF;
   width: 560px;
-  margin-top: 100px;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url(${contactus}) no-repeat
+  
   height: 280px;
 `;
 
@@ -69,12 +70,10 @@ const Wrapper = styled.section`
   bottom: 0;
   width: 100vw;
   text-align: center;
-  margin: 38em;
+  margin: 31.5em;
   background-color: ${colors.aboutTitle};
      
 `;
-
-
 
 
 const Contact = () => {

@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import {colors} from '../../styles/colors';
+import aboutImage from '../../images/about_us.png';
 
 const HomeContainer = styled.div`
+  background:url(${aboutImage})no-repeat center 326px;
+  background-size: 360px 560px;
   width: 100vw;
   height: calc(100vh + 10px);
   box-sizing: border-box;
@@ -40,9 +43,21 @@ const Text = styled.p`
   color: ${colors.mailTitle};
 `;
 
+
+//---
+
+const TvImage = styled.img`
+ margin: 43px;
+ background-size: cover;
+
+`;
+
+
 const About = () => {
   return (
     <HomeContainer id="section-about">
+
+      
       <Quote>
         <div>About us, the true story</div>
       </Quote>
@@ -60,3 +75,5 @@ const About = () => {
 }
 
 export default About;
+
+//<TvImage src={aboutImage} alt="hands" />

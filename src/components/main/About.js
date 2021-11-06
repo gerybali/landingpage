@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import {colors} from '../../styles/colors';
+import { colors } from '../../styles/colors';
 import aboutImage from '../../images/about_us.png';
 
 const HomeContainer = styled.div`
   background:url(${aboutImage})no-repeat center 326px;
   background-size: 360px 560px;
   width: 100vw;
-  height: calc(100vh + 10px);
+  height: 940px;
   box-sizing: border-box;
   background-color: ${colors.aboutBackground};
   display: flex;
@@ -57,19 +57,19 @@ const About = () => {
   return (
     <HomeContainer id="section-about">
 
-      
+
       <Quote>
         <div>About us, the true story</div>
       </Quote>
-      
+
       <AboutBox>
         <Text>
-        At Pafcol Studio we make games. Our passion is to find new ideas and experiences.  
-        We take inspiration and experiment on topics that aren't always game related.
-        
+          At Pafcol Studio we make games. Our passion is to find new ideas and experiences.
+          We take inspiration and experiment on topics that aren't always game related.
+
         </Text>
       </AboutBox>
-      
+
     </HomeContainer>
   )
 }

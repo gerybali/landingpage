@@ -5,6 +5,7 @@ import contactus from '../../images/contactus-white.png';
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {faTwitter} from "@fortawesome/free-brands-svg-icons";
 
 const HomeContainer = styled.div`
   background: url(${contactus}) no-repeat center 222px;
@@ -95,6 +96,15 @@ const Contact = () => {
   className="instagram social"
 > 
   <FontAwesomeIcon icon={faInstagram} size="3x" />
+  
+</a>
+&emsp;&emsp;
+<a
+  href="https://www.twitter.com/pafcolstudio"
+  className="twitter social"
+> 
+  
+  <FontAwesomeIcon icon={faTwitter} size="3x" />
 </a>
 </Wrapper>
 

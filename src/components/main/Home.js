@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {colors} from '../../styles/colors';
-import hands from '../../images/Qu.png';
+import hands from '../../images/orbs.png';
 import google from '../../images/google.webp';
 import ios from '../../images/ios.webp';
 import tv from '../../images/tv_1.png';
@@ -44,7 +44,7 @@ const Hands = styled.div`
 
 const HandsImage = styled.img`
   width: 750px;
-`;
+  `; //filter: drop-shadow(4px 4px 3px #575757);
 
 const DownloadButtons = styled.div`
   position: absolute;
@@ -68,7 +68,8 @@ const NewTitle = styled.div`
 
 const TvImage = styled.img`
   width: 500px;
-`;
+  
+`; //filter: drop-shadow(4px 4px 3px #575757);
 
 const NewProject = styled.div`
   font-size: 1em;
@@ -84,12 +85,12 @@ const Home = () => {
     <HomeContainer id="section-main">
       <Quote>
         <div>The lab, the drones!</div>
-        <div>Let's billiard!?</div>
+        <div>Let's billiard!</div>
       </Quote>
       <Hands>
       <HandsImage src={hands} alt="hands" />
       
-      <NewTitle>Q-Drone  (coming soon)</NewTitle>
+      <NewTitle>Orbs <small><small> (coming soon)</small></small></NewTitle>
 
       <DownloadButtons>
         <img src={google} alt="google" />

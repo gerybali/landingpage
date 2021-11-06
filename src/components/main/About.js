@@ -77,3 +77,4 @@ const About = () => {
 export default About;
 
 //<TvImage src={aboutImage} alt="hands" />
+//filter: drop-shadow(30px 10px 4px #4444dd);

@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import {colors} from '../../styles/colors';
+import { colors } from '../../styles/colors';
 import contactus from '../../images/contactus-white.png';
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faInstagram} from "@fortawesome/free-brands-svg-icons";
-import {faTwitter} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const HomeContainer = styled.div`
   background: url(${contactus}) no-repeat center 222px;
@@ -36,14 +36,11 @@ const Quote = styled.div`
 
 const Box = styled.div`
   color: #FFF;
-  width: 560px;
-  margin-top: 200px;
+  width: 800px;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
-  
-  height: 280px;
+  flex-grow: 1;
 `;
 
 const ContactMessage = styled.div`
@@ -52,6 +49,7 @@ const ContactMessage = styled.div`
   display: flex;
   justify-content: flex-end;
   font-size: 20px;
+  margin-top: 238px;
   & a {
     cursor: pointer;
     color: ${colors.aboutTitle};
@@ -66,13 +64,16 @@ const ContactMessage = styled.div`
 const Wrapper = styled.section`
   
   height: 51px;
-  position: relative;
-  left: 0;
-  bottom: 0;
   width: 100vw;
   text-align: center;
-  margin: 31.5em;
-  background-color: ${colors.aboutTitle};
+  border-top: 2px solid ${colors.aboutTitle};
+  color: ${colors.comingSoonBG};
+  a {
+    color: ${colors.comingSoonBG};
+    margin-left: 8px;
+    display: inline-block;
+  }
+  padding: 4px;
      
 `;
 
@@ -83,30 +84,20 @@ const Contact = () => {
       <Quote>
         <div>Want to know more?</div>
       </Quote>
-      
+
       <Box>
         <ContactMessage>Send an email to <a href="mailto:pafcolstudio@gmail.com">pafcolstudio@gmail.com</a></ContactMessage>
-    
+
       </Box>
-      
+
       <Wrapper>
-       
-      <a
-  href="https://www.instagram.com/pafcolstudio"
-  className="instagram social"
-> 
-  <FontAwesomeIcon icon={faInstagram} size="3x" />
-  
-</a>
-&emsp;&emsp;
-<a
-  href="https://www.twitter.com/pafcolstudio"
-  className="twitter social"
-> 
-  
-  <FontAwesomeIcon icon={faTwitter} size="3x" />
-</a>
-</Wrapper>
+        <a href="https://www.instagram.com/pafcolstudio" className="instagram social">
+          <FontAwesomeIcon icon={faInstagram} size="3x" />
+        </a>
+        <a href="https://www.twitter.com/pafcolstudio" className="twitter social">
+          <FontAwesomeIcon icon={faTwitter} size="3x" />
+        </a>
+      </Wrapper>
 
     </HomeContainer>
   )

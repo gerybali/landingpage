@@ -9,6 +9,7 @@ export const colors = {
   aboutTitle: '#dfe842',
   contactTitle: '#a5a5a5',
   mailTitle: '#000000',
+  comingSoonBG: '#6610f2',
   //storyText: '#006700',
 }
 

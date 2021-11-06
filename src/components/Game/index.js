@@ -69,7 +69,7 @@ const DownloadButtons = styled.div`
 const ComingSoon = styled.div`
   padding: 4px;
   width: 100px;
-  background-color: #6610f2;
+  background-color: ${colors.comingSoonBG};
   color: #FFF;
   border-radius: 4px;
   transform: rotate(45deg);
